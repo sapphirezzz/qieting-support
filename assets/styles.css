@@ -58,6 +58,13 @@ a:hover { color: var(--accent); }
   margin-bottom: 42px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
 .brand {
   color: var(--text);
   font-size: 19px;
@@ -76,6 +83,31 @@ a:hover { color: var(--accent); }
 
 .nav a { color: var(--secondary); text-decoration: none; }
 .nav a[aria-current="page"] { color: var(--accent); font-weight: 650; }
+
+.language-switcher {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.language-switcher a {
+  min-width: 28px;
+  padding: 6px 5px;
+  border-radius: 6px;
+  color: var(--secondary);
+  text-align: center;
+  text-decoration: none;
+}
+
+.language-switcher a[aria-current="true"] {
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 700;
+}
 
 .eyebrow {
   color: var(--accent);
@@ -153,5 +185,7 @@ li + li { margin-top: 7px; }
   .site-header { margin-bottom: 32px; }
   .brand small { display: none; }
   .nav { gap: 14px; }
+  .header-actions { gap: 12px; }
+  .language-switcher { gap: 0; }
   .card { padding: 20px; }
 }

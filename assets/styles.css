@@ -124,6 +124,8 @@ p { margin: 0 0 14px; }
 
 .card + .card { margin-top: 14px; }
 
+.card > h2:first-child { margin-top: 0; }
+
 .card p:last-child, .card ul:last-child { margin-bottom: 0; }
 
 ul { margin: 8px 0 14px; padding-left: 1.25em; }

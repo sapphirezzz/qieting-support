@@ -144,6 +144,7 @@ p { margin: 0 0 14px; }
   margin-top: 22px;
   color: var(--secondary);
   font-size: 14px;
+  white-space: pre-line;
 }
 
 .card {

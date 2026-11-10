@@ -4,9 +4,9 @@
   const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
   const language = supportedLanguages.includes(requestedLanguage) ? requestedLanguage : fallbackLanguage;
   const copy = {
-    "zh-Hans": { navigation: "页面导航", home: "首页", support: "支持", privacy: "隐私政策" },
-    "zh-Hant": { navigation: "頁面導覽", home: "首頁", support: "支援", privacy: "隱私權政策" },
-    en: { navigation: "Page navigation", home: "Home", support: "Support", privacy: "Privacy Policy" }
+    "zh-Hans": { navigation: "页面导航", home: "首页", support: "支持", privacy: "隐私政策", supportEmail: "客服邮箱" },
+    "zh-Hant": { navigation: "頁面導覽", home: "首頁", support: "支援", privacy: "隱私權政策", supportEmail: "客服信箱" },
+    en: { navigation: "Page navigation", home: "Home", support: "Support", privacy: "Privacy Policy", supportEmail: "Support email" }
   };
 
   document.documentElement.lang = language === "zh-Hans" ? "zh-CN" : language === "zh-Hant" ? "zh-Hant" : "en";
